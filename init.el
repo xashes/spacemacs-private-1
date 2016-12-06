@@ -31,7 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     ivy
+      ivy
       better-defaults
       github
       ranger
@@ -57,33 +57,33 @@ values."
                        auto-completion-enable-snippets-in-popup t
                        :disabled-for org markdown)
       (osx :variables osx-dictionary-dictionary-choice "Simplified Chinese - English")
-      restclient
+      ;;restclient
       (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
-      (shell :variables shell-default-shell 'eshell)
-      docker
+      ;;(shell :variables shell-default-shell 'eshell)
+      ;;docker
       ;; latex
-      deft
+      ;;deft
       markdown
       org
-      shaders
+      ;;shaders
       yaml
-      react
+      ;;react
       (python :variables
               python-test-runner '(nose pytest))
-      (ruby :variables ruby-version-manager 'chruby)
-      ruby-on-rails
-      lua
+      ;;(ruby :variables ruby-version-manager 'chruby)
+      ;;ruby-on-rails
+      ;;lua
       html
-      javascript
-      (typescript :variables
-                  typescript-fmt-on-save nil
-                  typescript-fmt-tool 'typescript-formatter)
+      ;;javascript
+      ;;(typescript :variables
+                  ;;typescript-fmt-on-save nil
+                  ;;typescript-fmt-tool 'typescript-formatter)
       emacs-lisp
-      (clojure :variables clojure-enable-fancify-symbols t)
-      racket
-      (c-c++ :variables
-             c-c++-default-mode-for-headers 'c++-mode)
-      zilongshanren
+      ;;(clojure :variables clojure-enable-fancify-symbols t)
+      ;;racket
+      ;;(c-c++ :variables
+             ;;c-c++-default-mode-for-headers 'c++-mode)
+      ;;zilongshanren
       (chinese :packages youdao-dictionary fcitx
                :variables chinese-enable-fcitx nil
                chinese-enable-youdao-dict t)
@@ -95,24 +95,7 @@ values."
    dotspacemacs-additional-packages '(sicp)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
-   dotspacemacs-excluded-packages
-   '(magit-gh-pulls magit-gitflow org-projectile evil-mc
-                        evil-args evil-ediff evil-exchange evil-unimpaired
-                        evil-indent-plus volatile-highlights smartparens
-                        spaceline holy-mode skewer-mode rainbow-delimiters
-                        highlight-indentation vi-tilde-fringe eyebrowse
-                        org-bullets smooth-scrolling org-repo-todo org-download org-timer
-                        livid-mode git-gutter git-gutter-fringe  evil-escape
-                        leuven-theme gh-md evil-lisp-state spray lorem-ipsum
-                        ac-ispell ace-jump-mode auto-complete auto-dictionary
-                        clang-format define-word google-translate disaster epic
-                        fancy-battery neotree org-present orgit orglue spacemacs-theme
-                        helm-flyspell flyspell-correct-helm clean-aindent-mode
-                        helm-c-yasnippet ace-jump-helm-line helm-make
-                        helm-themes helm-swoop helm-spacemacs-help smeargle
-                        ido-vertical-mode flx-ido company-quickhelp counsel-projectile
-                        window-purpose ivy-purpose helm-purpose spacemacs-purpose-popwin
-                        )
+   dotspacemacs-excluded-packages '()
    dotspacemacs-install-packages 'used-only
    dotspacemacs-delete-orphan-packages t))
 
@@ -422,12 +405,12 @@ values."
         (when (looking-at (concat "^" (make-string tab-width ?\ )))
           (replace-match "")))))
 
-  (defun zilongshanren/toggle-major-mode ()
-    (interactive)
-    (if (eq major-mode 'fundamental-mode)
-        (set-auto-mode)
-      (fundamental-mode)))
-  (spacemacs/set-leader-keys "otm" 'zilongshanren/toggle-major-mode)
+  ;;(defun zilongshanren/toggle-major-mode ()
+  ;;  (interactive)
+  ;;  (if (eq major-mode 'fundamental-mode)
+  ;;      (set-auto-mode)
+  ;;    (fundamental-mode)))
+  ;;(spacemacs/set-leader-keys "otm" 'zilongshanren/toggle-major-mode)
 
   ;; (add-hook 'text-mode-hook 'spacemacs/toggle-spelling-checking-on)
 
