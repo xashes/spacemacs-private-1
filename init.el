@@ -59,7 +59,7 @@ values."
       (osx :variables osx-dictionary-dictionary-choice "Simplified Chinese - English")
       ;;restclient
       (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
-      ;;(shell :variables shell-default-shell 'eshell)
+      ;; (shell :variables shell-default-shell 'eshell)
       ;;docker
       ;; latex
       ;;deft
@@ -69,7 +69,7 @@ values."
       yaml
       ;;react
       (python :variables
-              python-test-runner '(nose pytest))
+              python-test-runner '(pytest nose))
       ;;(ruby :variables ruby-version-manager 'chruby)
       ;;ruby-on-rails
       ;;lua
@@ -286,7 +286,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers 'relative
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'origami
